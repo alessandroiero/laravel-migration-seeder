@@ -10,13 +10,7 @@
         <div class="container">
             <ul>
                 @foreach ($trains as $train)
-                <li>{{$train->azienda}}</li>
-                <li>{{$train->stazione_partenza}}</li>
-                <li>{{$train->stazione_arrivo}}</li>
-                <li>{{$train->orario_partenza}}</li>
-                <li>{{$train->orario_arrivo}}</li>
-                <li>{{$train->orario_arrivo}}</li>
-                <li>{{$train->n_carrozza}}</li>
+                <li>Treno: {{$train->azienda}} - Numero Carrozza {{$train->n_carrozza}} - Da {{$train->stazione_partenza}} - A {{$train->stazione_arrivo}} - Orario Partenza {{$train->orario_partenza}} - Orario Arrivo {{$train->orario_arrivo}}</li>
                 @endforeach
             </ul>
         </div>
